@@ -4,7 +4,6 @@ Simple service for translating lines in a document for a given placeholder
 
  **Tested on:**
 - Evolution 2.0.0-alpha
-- pug-php/php 3.2
 
 ### Usage
 * Install plugin
