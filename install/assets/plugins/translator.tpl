@@ -80,7 +80,7 @@ class Translator {
 		$out = [];
 
 		$content = file_get_contents($fullpath);
-		preg_match_all("/^(.*)=(.*[^=]*)$/m", $content, $matches, PREG_SET_ORDER, 0);
+		preg_match_all("/^([\S]*?)=(.*[^=]*)$/m", $content, $matches, PREG_SET_ORDER, 0);
 
 		foreach ($matches as $match) {
 			$out[trim($match[1])] = $match[2];
